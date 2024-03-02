@@ -73,3 +73,25 @@
     <script src="main.js"></script>
 </body>
 </html>
+
+
+<!-- 모달 생성 -->
+<div class="modal fade" id="memoModal" tabindex="-1" aria-labelledby="memoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="memoModalLabel">SCHEDULE</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="memoForm">
+          <div class="mb-3">
+            <label for="memoText" class="form-label">Enter Schedule:</label>
+            <textarea class="form-control" id="memoText" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">check</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

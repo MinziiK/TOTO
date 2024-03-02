@@ -6,16 +6,19 @@ document.addEventListener('DOMContentLoaded', function() {
     calendar = new FullCalendar.Calendar(calendarEl, {
         initialView: 'dayGridMonth',
         selectable: true,
+        selectHelper: true,
         events: [],
+        select: function(event){
+            $(`#memoModal`).modal(`toggle`);
+        },
         dateClick: function (e) {
             let eventTitle = prompt("Enter event title:");
-            if(eventTitle === null || eventTitle === ""){ return; }
+            if(eventTitle === null || eventTitle === ""){ return; }            
             addEventToCalendar({ title:eventTitle, start:e.dateStr, color:'#8b008b' });
         }
     });
     calendar.render();
 });
-
 
 function addEventToCalendar(event){
     calendar.addEvent(event);
