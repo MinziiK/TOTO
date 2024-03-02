@@ -61,7 +61,8 @@
     <main>
         <div class="container">
             <!-- 달력 -->
-            <div id='calendar' data-bs-toggle="modal" data-bs-target="#memoModal"></div>
+            <div id='calendar'></div>
+            <!-- data-bs-toggle="modal" data-bs-target="#memoModal" -->
         </div>
     </main>
 
@@ -69,6 +70,7 @@
         <!-- add ....  -->
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
@@ -89,7 +91,7 @@
             <label for="memoText" class="form-label">Enter Schedule:</label>
             <textarea class="form-control" id="memoText" rows="3"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">check</button>
+          <button type="submit" class="btn btn-primary">ADD</button>
         </form>
       </div>
     </div>
