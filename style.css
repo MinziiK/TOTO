@@ -39,6 +39,8 @@ body{
 @media (max-width: 600px){
     #calendar{
         height: 500px;
-        width: 400px;
+        width: 350px;
+        color: darkmagenta;
+        margin: auto;
     }
 }
