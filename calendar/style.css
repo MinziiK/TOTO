@@ -85,6 +85,9 @@ body {
         width: 300px; /* 모달의 너비를 300px로 설정 */
         margin: auto; /* 모달을 화면 중앙에 위치시킴 */
     }
+    .container{
+        margin-top: 160px;
+    }
 }
 
 /* 요일 색상 바꾸기 */
